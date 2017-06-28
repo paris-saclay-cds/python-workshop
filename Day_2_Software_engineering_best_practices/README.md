@@ -20,8 +20,13 @@ TODO: put intro from ramp
 
 Notebook about functions: [03_functions.ipynb](03_functions.ipynb)
 
- **Exercise** For those parts of the notebook that are repetitive, refactor
- this code into a function and use this function multiple times.
+**Exercise** For those parts of the notebook that are repetitive, refactor this
+code into a function and use this function multiple times. For each of the
+functions created, add a docstring with: (i) a short description, (ii) a long
+description (sometimes optional), (iii) a *Parameters* and *Returns* sections
+documenting the input and output parameters.
+
+- Create a function named `read_spectra` which accepts `read_csv` which is the path to a csv file and returns `spectra`, `concentration`, and `molecule` which are a Dataframe containing the Raman spectra
 
  - Create functions `alabl` to ...
     which accepts ... and returns ...
