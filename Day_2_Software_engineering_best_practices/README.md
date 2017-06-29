@@ -82,11 +82,13 @@ notebook in the directory `exercise` to use it now on.
 
 ### 5. Version control with git
 
-theory
-- why version control
-- concepts of git: repo, commits = you do changes and then you say: let's save this state = commit (snapshot), history of commits,
-- installation how-to if needed
+[Slides](https://paris-saclay-cds.github.io/python-workshop/Day_2_Software_engineering_best_practices/05_documentation_git.html)
 
+**Exercise:**
+
+- Install and configure `git`.
+- Make the `spectra_analysis` directory into a `git` repository. Refer to the
+  slides for the detailed instructions.
 
 Exercise: (live example by instructor)
 - configure git
