@@ -72,7 +72,7 @@ Notebook: [04_reusing_code_modules.ipynb](04_reusing_code_modules.ipynb)
 - Move the functions you have written in the previous exercise in the notebook to a stand-alone python file, e.g. `spectra_analysis.py`, located next to the notebook. Import the functions from that file instead of defining them inside the notebook itself (`from spectra_analysis import ...`)
 
 **Synchronization** Before to start the exercise, use the notebook in
-(solutions/03_code_style.ipynb)[solutions/03_code_style.ipynb]. Copy the
+[solutions/03_code_style.ipynb](solutions/03_code_style.ipynb). Copy the
 notebook in the directory `exercise` to use it now on.
 
 **Exercise: create a package**
