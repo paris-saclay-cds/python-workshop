@@ -90,16 +90,6 @@ notebook in the directory `exercise` to use it now on.
 - Make the `spectra_analysis` directory into a `git` repository. Refer to the
   slides for the detailed instructions.
 
-Exercise: (live example by instructor)
-- configure git
-- make the spectra_analysis dir into a git repo
-  git init
-- add a readme, add a gitignore and commit
-- add the python file
-
-(init, status, log, add commit )
-
-
 ### 6. Unit testing
 
 theory notebook with exercises
