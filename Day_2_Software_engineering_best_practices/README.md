@@ -73,7 +73,7 @@ Notebook: [04_reusing_code_modules.ipynb](04_reusing_code_modules.ipynb)
 
 **Synchronization** Before to start the exercise, use the notebook in
 (solutions/03_code_style.ipynb)[solutions/03_code_style.ipynb]. Copy the
-notebook in the root directory to use it now on.
+notebook in the directory `exercise` to use it now on.
 
 **Exercise: create a package**
 - Make a small python package by creating a directory called `spectra_analysis` that contains an empty file named `__init__.py`
