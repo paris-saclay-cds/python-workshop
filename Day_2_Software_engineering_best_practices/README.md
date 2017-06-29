@@ -26,7 +26,7 @@ functions created, add a docstring with: (i) a short description, (ii) a long
 description (sometimes optional), (iii) a *Parameters* and *Returns* sections
 documenting the input and output parameters.
 
-- Create a function named `read_spectra` which accepts `read_csv` which is the
+- Create a function named `read_spectra` which accepts `path_csv` which is the
   path to a csv file and returns `spectra`, `concentration`, and `molecule`
   which are a Dataframe containing the Raman spectra, a Serie containing the
   concentration of the molecule, and a Serie containing the type of
