@@ -28,8 +28,8 @@ documenting the input and output parameters.
 
 - Create a function named `read_spectra` which accepts `path_csv` which is the
   path to a csv file and returns `spectra`, `concentration`, and `molecule`
-  which are a Dataframe containing the Raman spectra, a Serie containing the
-  concentration of the molecule, and a Serie containing the type of
+  which are a Dataframe containing the Raman spectra, a Series containing the
+  concentration of the molecule, and a Series containing the type of
   chemotherapeutic agent, respectively.
 - Create a "private" function `_apply_axis_layout` which accepts `ax` and
   `title` which are the matplotlib axis and the title of the plot,
@@ -40,7 +40,7 @@ documenting the input and output parameters.
   passed to the `_apply_axis_layout` internally to setup the layout of the
   plot. The purpose of this function is to plot a bunch of Raman spectra on the
   same figure.
-- Create a function `plot_spectra_by_type` which the same parameters as the
+- Create a function `plot_spectra_by_type` whith the same parameters as the
   above function. In addition, the `classes` parameters need to be passed to
   group the spectra by category before to compute the mean and standard
   deviation.
