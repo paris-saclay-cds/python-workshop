@@ -29,25 +29,31 @@ class: center, middle
 
 ---
 
-# What `git` is used for?
+# What version control is used for?
 
 .center[![](../img/git/writing.png)]
 
 ---
 
 count: false
-# What `git` is used for?
+# What version control is used for?
 
 .center[![](../img/git/coding.png)]
 
 ---
 count: false
-# What `git` is used for?
+# What version control is used for?
 
 * Keep track of history
 * Safe development of new features
 * Swap between versions
 * **Enable collaborative coding, writing, ...**
+
+---
+
+# Terminology
+
+
 
 ---
 
@@ -59,7 +65,7 @@ count: false
 * `$ git add file`: start tracking changes for a file.
 * `$ git rm file`: stop tracking changes for a file.
 * `$ git status`: get information regarding the status of the repository.
-* `$ git commit`: get a snapshot of the changes of the files tracked.
+* `$ git commit`: take a snapshot of the changes of the files tracked.
 * `$ git diff`: see the difference between different commit for the files.
 
 ---
@@ -141,12 +147,6 @@ We can start to track files.
 $ git add .gitignore README.md
 ```
 
-We can also add directly a folder.
-
-```bash
-$ git add .
-```
-
 ### 4. Check the status
 
 You can use `status` to get information about the repository.
@@ -175,6 +175,21 @@ We can now check the history.
 $ git log
 ```
 
+---
+
+# Live example
+
+### 7. Add `spectral_analysis` module.
+
+We can also add directly a folder.
+
+```bash
+$ git add spectral_analysis
+$ git status
+$ git diff
+$ git commit -m 'Add spectral_analysis module'
+$ git log
+```
 
     </textarea>
 <!--    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
