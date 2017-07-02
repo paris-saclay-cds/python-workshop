@@ -2,8 +2,8 @@ import numpy as np
 
 from numpy.testing import assert_allclose
 
-from ..regression import fit_params
-from ..regression import transform
+from spectra_analysis.regression import fit_params
+from spectra_analysis.regression import transform
 
 
 def test_fit_params():

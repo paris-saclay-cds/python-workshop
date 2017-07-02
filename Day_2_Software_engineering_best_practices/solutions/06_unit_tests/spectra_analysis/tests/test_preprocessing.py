@@ -2,7 +2,7 @@ from os.path import dirname, join
 import numpy as np
 from numpy.testing import (assert_allclose, assert_array_equal,
                            assert_raises_regex)
-from ..preprocessing import read_spectra
+from spectra_analysis.preprocessing import read_spectra
 
 
 def test_read_spectra_error():
