@@ -4,7 +4,6 @@ Spectra analysis plotting utilities
 
 
 """
-
 import itertools
 
 import numpy as np
@@ -24,52 +23,52 @@ def _apply_axis_layout(ax, title):
     ax.spines['left'].set_position(('outward', 10))
     ax.spines['bottom'].set_position(('outward', 10))
 
-    
+
 def plot_spectra(frequency, spectra, title):
     """Plot a bunch of Raman spectra.
-    
+
     Parameters
     ----------
     frequency : pandas Series, shape (n_freq_points,)
         Frequencies for which the Raman spectra were acquired.
-        
+
     spectra : pandas DataFrame, shape (n_spectra, n_freq_points)
         DataFrame containing all Raman spectra.
-        
+
     title : str
         Title added to the plot.
-    
+
     Returns
     -------
     None
-    
+
     """
     fig, ax = plt.subplots()
     ax.plot(frequency, spectra.T)
     _apply_axis_layout(ax, title)
-    
-    
+
+
 def plot_spectra_by_type(frequency, spectra, classes, title):
     """Plot mean spectrum with its variance for a given class.
-    
+
     Parameters
     ----------
     frequency : pandas Series, shape (n_freq_points,)
         Frequencies for which the Raman spectra were acquired.
-        
+
     spectra : pandas DataFrame, shape (n_spectra, n_freq_points)
         DataFrame containing all Raman spectra.
-        
+
     classes : array-like, shape (n_classes,)
         Array contining the different spectra class which will be plotted.
-        
+
     title : str
         Title added to the plot.
-        
+
     Returns
     -------
     None
-    
+
     """
     fig, ax = plt.subplots()
     for label in np.unique(classes):
@@ -83,27 +82,27 @@ def plot_spectra_by_type(frequency, spectra, classes, title):
                         alpha=0.2)
     _apply_axis_layout(ax, title)
     ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-    
+
 
 def plot_cm(cm, classes, title):
     """Plot a confusion matrix.
-    
+
     Parameters
     ----------
     cm : ndarray, shape (n_classes, n_classes)
         Confusion matrix.
-        
+
     classes : array-like, shape (n_classes,)
         Array contining the different spectra classes used in the
         classification problem.
-        
+
     title : str
         Title added to the plot.
-        
+
     Returns
     -------
     None
-    
+
     """
     fig, ax = plt.subplots()
     plt.imshow(cm, interpolation='nearest', cmap='bwr')
@@ -124,10 +123,10 @@ def plot_cm(cm, classes, title):
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
 
-    
+
 def plot_regression(y_true, y_pred, title):
     """Plot actual vs. predicted scatter plot.
-    
+
     Parameters
     ----------
     y_true : array-like, shape (n_samples,)
@@ -138,12 +137,12 @@ def plot_regression(y_true, y_pred, title):
 
     title : str
         Title added to the plot.
-    
+
     Returns
     -------
     None
-    
-    """    
+
+    """
     fig, ax = plt.subplots()
     ax.scatter(y_true, y_pred)
     ax.plot([0, 25000], [0, 25000], '--k')
@@ -151,6 +150,6 @@ def plot_regression(y_true, y_pred, title):
     ax.set_xlabel('True Target')
     ax.set_title(title)
     ax.text(1000, 20000, r'$R^2$=%.2f, MAE=%.2f' % (
-       r2_score(y_true, y_pred), median_absolute_error(y_true, y_pred)))
+        r2_score(y_true, y_pred), median_absolute_error(y_true, y_pred)))
     ax.set_xlim([0, 25000])
     ax.set_ylim([0, 25000])
