@@ -32,6 +32,7 @@ def read_spectra(path_csv):
     if not isinstance(path_csv, six.string_types):
         raise TypeError("'path_csv' needs to be string. Got {}"
                         " instead.".format(type(path_csv)))
+    else:
         if not path_csv.endswith('.csv'):
             raise ValueError('Wrong file format. Expecting csv file')
 
