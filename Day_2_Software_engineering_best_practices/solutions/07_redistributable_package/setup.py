@@ -1,12 +1,7 @@
-import os
+from os.path import join
 from setuptools import setup, find_packages
+from spectra_analysis import __version__
 PACKAGES = find_packages()
-
-# Get version and release info, which is all stored in shablona/version.py
-ver_file = os.path.join('spectra_analysis', 'version.py')
-with open(ver_file) as f:
-    exec(f.read())
-
 
 CLASSIFIERS = ["Development Status :: 3 - Alpha",
                "Environment :: Console",
@@ -37,11 +32,8 @@ LICENSE = "MIT"
 AUTHOR = "Center for Data Science"
 AUTHOR_EMAIL = "cdsupsay@gmail.com"
 PLATFORMS = "OS Independent"
-MAJOR = _version_major
-MINOR = _version_minor
-MICRO = _version_micro
 VERSION = __version__
-PACKAGE_DATA = {'spectra_analysis': [pjoin('tests', 'data', '*')]}
+PACKAGE_DATA = {'spectra_analysis': [join('tests', 'data', '*')]}
 REQUIRES = ["numpy", "pandas", "scipy", 'scikit-learn', "matplotlib", "six"]
 
 opts = dict(name=NAME,

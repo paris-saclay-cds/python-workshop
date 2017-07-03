@@ -150,6 +150,6 @@ new package.
 **Exercise #2:**
 
 - We created a file
-  called [`.travis.yml`](solutions/08_github_travis/.travis.yml) which contain
-  the necessary information to run automatically the test on a server. You can
+  called [`.travis.yml`](solutions/08_github_travis/.travis.yml) which contains
+  the necessary information to run automatically the tests on a server. You can
   read this file to understand how the configuration is done.
